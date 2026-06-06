@@ -1,5 +1,3 @@
-# ReACT_based_AI_fraud_detection
-
 # Autonomous Fraud Investigator (ReACT Agent)
 
 This project implements an autonomous AI agent capable of investigating financial transactions. Unlike static LLMs, this agent uses the **ReACT (Reasoning and Acting)** framework to iteratively think, act, and observe, allowing it to perform complex multi-step investigations.
