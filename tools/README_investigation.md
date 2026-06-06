@@ -39,11 +39,11 @@ Because Colab caches imports, changes to your `.py` files aren't automatically r
 
 **Solution:** Use `importlib` to force a reload.
 
-```python
+```
 import importlib
 import tools.investigation_tools as inv
-importlib.reload(inv)```
-
+importlib.reload(inv)
+```
 
 ### 2. Parameter Name Mismatches
 When an LLM generates JSON, its keys might not match your function’s argument names.
@@ -60,7 +60,7 @@ Colab/Drive sometimes locks files as "Read-only."
 ```python
 %%writefile /content/drive/MyDrive/path/to/tools/investigation_tools.py
 # Paste your code here and run the cell to save
-
+```
 ### 4. Parsing Logic Debugging
 If your agent fails to execute tools (often due to regex or JSON formatting), add a debug print at the start of your parsing function to verify the content being processed.
 
@@ -68,6 +68,7 @@ If your agent fails to execute tools (often due to regex or JSON formatting), ad
 def parse_tool_calls(text):
     print(f"DEBUG: Parsing text length: {len(text)}")
     # ... rest of your logic
+```
 
 ## 🚀 Features
 * **Autonomous Reasoning:** Uses Chain of Thought (CoT).
